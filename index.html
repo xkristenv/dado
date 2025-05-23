@@ -1,0 +1,51 @@
+<!-- Este es un comentario mal ubicado que debería estar dentro del documento HTML -->
+
+<!doctype html>
+<head>
+    <title>Simulador de Dados o Moneda</title>
+    <!-- Importación redundante del mismo archivo CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Estilos en línea innecesarios */
+        body {
+            font-family: Arial;
+        }
+    </style>
+</head>
+<!-- Falta la etiqueta <html> de apertura -->
+
+<body style="background-color: #f5f5f5; padding: 20px;">
+    <div class="container">
+        <h1 id="titulo">Simulador de Dados o Moneda</h1>
+        <h2 id="titulo">Selecciona una opción</h2> <!-- ID duplicado -->
+        
+        <div class="botones">
+            <button id="dado6" onclick="doStuff(6)">Dado 6 caras</button>
+            <button id="dado20" onclick="clickMe(20)">Dado 20 caras</button>
+            <button id="moneda" onclick="lanzarMoneda()">Moneda</button>
+        </div>
+        
+        <!-- Estructura incorrecta con elementos anidados mal -->
+        <div class="resultado">
+            <h3>Resultado:</h3>
+            <!-- Contenedor para las animaciones -->
+            <div class="animacion-contenedor">
+                <div id="animacion-dado6" class="animacion-dado oculto">6</div>
+                <div id="animacion-dado20" class="animacion-dado oculto">20</div>
+                <div id="animacion-moneda" class="animacion-moneda oculto">$</div>
+            </div>
+            <div id="resultado">
+                <p>
+                    <span>
+                        <div>Aquí aparecerá el resultado</div> <!-- div dentro de span (incorrecto) -->
+                    </span>
+                </p>
+        </div>
+    </div>
+
+    <!-- Scripts importados de forma desordenada -->
+    <script src="js/script.js"></script>
+    <script src="js/script.js"></script> <!-- Importación redundante -->
+</body>
+<!-- Falta el cierre de la etiqueta </html> -->
